@@ -1,6 +1,6 @@
 import unittest
 from mymodule import square, double, add
-from mymath.geometry import cir
+from geometry import cir
 class TestSquare(unittest.TestCase): 
     def test1(self): 
         self.assertEqual(square(2), 4) # test when 2 is given as input the output is 4.
