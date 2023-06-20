@@ -1,5 +1,6 @@
 import unittest
-from Unit_Test import square, double, add
+from mymodule import square, double, add
+from mymath.geometry import cir
 class TestSquare(unittest.TestCase): 
     def test1(self): 
         self.assertEqual(square(2), 4) # test when 2 is given as input the output is 4.
@@ -21,5 +22,9 @@ class TestAdd(unittest.TestCase):
         self.assertEqual(add(2.3000,4.300), 6.6) # test when 2 is given as input the output is 4.
         self.assertNotEqual(add(-2,-2), 0) # test when 2 is given as input the output is 4.
 
+class TestAC(unittest.TestCase): 
+    def test1(self): 
+        self.assertAlmostEqual(cir(4), 50.24) # test when 2 is given as input the output is 4.
         
+
 unittest.main()
