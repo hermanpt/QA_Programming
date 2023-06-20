@@ -1,0 +1,11 @@
+def rec(a, b):
+    """
+    This function returns the sum of given numbers
+    """
+    return a * b
+
+def cir(a):
+    """
+    This function returns the sum of given numbers
+    """
+    return 3.14 * pow(a,2)
